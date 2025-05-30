@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon MCP Server</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚡ Pokémon MCP Dashboard</h1>
+    <p>Get Info | Compare | Strategy | Team Analysis</p>
+  </header>
+
+  <!-- INFO SECTION -->
+  <div class="section">
+    <h2>🔍 Get Pokémon Info</h2>
+    <input type="text" id="infoName" placeholder="Enter Pokémon name (e.g., pikachu)">
+    <button onclick="getInfo()">Get Info</button>
+    <pre id="infoResult"></pre>
+  </div>
+
+  <!-- COMPARE SECTION -->
+  <div class="section">
+    <h2>⚔️ Compare Two Pokémon</h2>
+    <input type="text" id="compare1" placeholder="First Pokémon name">
+    <input type="text" id="compare2" placeholder="Second Pokémon name">
+    <button onclick="comparePokemon()">Compare</button>
+    <pre id="compareResult"></pre>
+  </div>
+
+  <!-- STRATEGY SECTION -->
+  <div class="section">
+    <h2>🧠 Recommend Battle Strategy</h2>
+    <input type="text" id="strategy1" placeholder="First Pokémon name">
+    <input type="text" id="strategy2" placeholder="Second Pokémon name">
+    <button onclick="recommendStrategy()">Get Strategy</button>
+    <pre id="strategyResult"></pre>
+  </div>
+
+  <!-- TEAM ANALYSIS SECTION -->
+  <div class="section">
+    <h2>👥 Analyze Pokémon Team</h2>
+    <textarea id="teamList" placeholder="Enter Pokémon names separated by commas (e.g., pikachu, charizard, bulbasaur)"></textarea>
+    <button onclick="analyzeTeam()">Analyze Team</button>
+    <pre id="teamResult"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
